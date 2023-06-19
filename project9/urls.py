@@ -17,9 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from emailandsmsapp.views import Home,Reg
-urlpatterns = [
+urlpatterns = (
     path('admin/', admin.site.urls),
     path('emailandsmsapp',Home.as_view()),
     path('reg',Reg.as_view()),
-]
+)
 
